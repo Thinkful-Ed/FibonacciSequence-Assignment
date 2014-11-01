@@ -1,0 +1,45 @@
+// Playground - noun: a place where people can play
+
+import UIKit
+
+
+
+
+class Dog {
+    let name: String
+    let color: UIColor
+    
+    init(name: String, color: UIColor) {
+        self.name = name
+        self.color = color
+    }
+    
+    func speak() {
+        println("Ruff!")
+    }
+    
+    func sit() {
+        println("I'm \(name) and I'm sitting :)")
+    }
+    
+    class func genus() -> String {
+        return "Canis"
+    }
+    
+}
+
+
+
+let white = UIColor.whiteColor()
+let spunky = Dog(name: "Spunky", color: white)
+spunky.speak()
+spunky.sit()
+
+let lightBrown = UIColor(hue: 0.1, saturation: 0.4, brightness: 0.8, alpha: 1)
+let buddy = Dog(name: "Buddy", color: lightBrown)
+buddy.speak()
+buddy.sit()
+
+
+let genusOfDog = Dog.genus()
+println("All dogs belong to the \(genusOfDog) genus.")
