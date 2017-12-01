@@ -26,3 +26,4 @@ class FibonacciSequence {
 let fibanocciSequence = FibonacciSequence(maxNumber:12345, includesZero: true)
 
 let anotherSequence = FibonacciSequence(numberOfItemsInSequence: 13, includesZero: true)
+
